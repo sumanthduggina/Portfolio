@@ -8,6 +8,22 @@ body::-webkit-scrollbar {
     display: none; 
 }
 
+head.img{
+    border-radius: 50%;
+    
+}
+/* Resume */
+.corner-element {
+    position: fixed;
+    bottom: 5%; 
+    right: 2%; 
+    z-index: 1;
+}
+
+.corner-element img{
+    border-radius: 20%;
+    width: 50px;
+}
 
 /* Body Header */
 
