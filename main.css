@@ -196,38 +196,55 @@ section:nth-child(2n + 1) {
   overflow: auto;
 }
 
-/*Skills Section*/
-
-.skills-display {
-  width: 75%;
-  padding: 10px;
-  margin-bottom: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+/* Skills section styling */
+.skills-section {
+  background-color: #f8f9fa; /* subtle light background */
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin: 40px auto;
+  max-width: 1000px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.skill-progress {
-  width: 11rem;
-  height: 2.2rem;
-  background-color: lightgrey;
-  border-radius: 1rem;
-  box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
-  margin: 25px;
-  overflow: hidden;
+.skills-section h3.skill-section {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 8px;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 4px;
 }
 
-.skill-progress > div {
-  border-radius: 20px 0px 0px 20px;
-  box-shadow: 1px 1px 5px 2px #989882;
-}
-
-.skill-name span {
-  color: white;
+.skills-section p {
   font-size: 1rem;
-  margin-left: 10px;
-  vertical-align: middle;
+  color: #555;
+  margin-bottom: 16px;
+  line-height: 1.6;
 }
+
+/* Optional hover to emphasize skills on hover */
+.skills-section p:hover {
+  background-color: #e9ecef;
+  border-radius: 4px;
+  padding: 2px 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Responsive improvement for smaller screens */
+@media (max-width: 600px) {
+  .skills-section {
+    padding: 20px 10px;
+  }
+
+  .skills-section h3.skill-section {
+    font-size: 1.2rem;
+  }
+
+  .skills-section p {
+    font-size: 0.95rem;
+  }
+}
+
 
 /* Work Experience */
 
@@ -348,6 +365,7 @@ section:nth-child(2n + 1) {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  border-radius: 15px;
 }
 
 .portfolio-image-container img {
@@ -616,4 +634,73 @@ button:focus {
     width: 80%;
     margin: 10%;
   }
+}
+
+//design ofr certificate section
+.certifications-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.certification-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.certification-logo img {
+  width: 80px;
+  height: auto;
+}
+
+.certification-details h3 {
+  margin: 0;
+  font-size: 0.9 rem;
+  color: #007bff;
+}
+
+.certification-details p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.certification-details a {
+  font-size: 0.9rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.certification-details a:hover {
+  text-decoration: underline;
+}
+
+.skills-section h3.skill-section {
+  font-size: 1.4rem;  /* looks great as is */
+}
+
+.skills-section p {
+  font-size: 1rem;  /* good readability, consistent with your portfolio */
+}
+.certification-details h3 {
+  margin: 0;
+  font-size: 1.1rem; /* clearer and a bit larger for the cert title */
+  color: #007bff;
+}
+
+.certification-details p {
+  margin: 4px 0;
+  font-size: 0.95rem; /* consistent with the skills paragraph size */
+  color: #555;
+}
+
+.certification-details a {
+  font-size: 0.9rem; /* link font size is perfect */
 }
